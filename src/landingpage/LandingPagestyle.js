@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { Button, Input } from "antd";
+import Slider from "react-slick";
 
 export const NavDiv = styled.div`
   width: 100%;
@@ -398,7 +399,7 @@ export const TestimonialCard1InnerP = styled.p`
   color: #475467;
 `;
 export const FAQSection = styled.div`
-  width: 100%;
+  width: 99%;
   height: 666px;
   display: flex;
   align-items: center;
@@ -406,11 +407,14 @@ export const FAQSection = styled.div`
 `;
 export const FAQInnerDiv = styled.div`
   background-color: #0068d6;
-  width: 85%;
+  width: 90% !important;
   height: 474px;
   border-radius: 16px;
+  display: inline-block;
 `;
-
+export const FAQSlider = styled(Slider)`
+  width: 99%;
+`;
 export const FAQButtonDiv = styled.div`
   /* border: 2px solid blue; */
   display: flex;
@@ -463,7 +467,7 @@ export const FAQp = styled.p`
 `;
 export const LastSection = styled.div`
   width: 100%;
-  height: 1026px;
+  /* height: 786px; */
 `;
 export const LastSectionHeadDiv = styled.div`
   height: 154px;
@@ -492,42 +496,42 @@ export const LastSectionHeadDes = styled.p`
 `;
 export const LastSectionQASection = styled.div`
   margin-top: 64px;
-  height: 616px;
+  /* height: 616px; */
   width: 53%;
   margin-left: 260px;
 `;
 export const LastSectionQA1 = styled.div`
   width: 100%;
-  height: 156px;
+  /* height: 156px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 export const LastSectionQA1Inner = styled.div`
   width: 95%;
-  height: 108px;
-  margin-top: 23px;
-  margin-left: 30px;
 `;
 export const PlusMinus = styled.img`
   width: 20px;
-  height: 20px;
+  cursor: pointer;
 `;
 export const LastSectionQuestion = styled.span`
   font-size: 17px;
-  margin-left: 10px;
 `;
 export const LastSectionAnswer = styled.p`
   font-size: 16px;
   color: #475467;
+  overflow: hidden;
+  margin-top: 10px;
 `;
 export const LastSectionQA = styled.div`
   width: 100%;
-  height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 `;
 export const LastSectionQADiv = styled.div`
-  height: 28px;
-  width: 600px;
+  width: 95%;
 `;
 export const FooterSection = styled.div`
   width: 100%;

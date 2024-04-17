@@ -3,3 +3,38 @@
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
 }
+.slider234 >div >div >div >div {
+    display: flex !important;
+    justify-content: center !important;
+}
+.open{
+    animation-duration: 3000ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-name: slideopen;
+    max-height: 0px;
+}
+@keyframes slideopen {
+    from{
+        max-height: 0px;
+    }
+    to{
+        max-height: 5200px;
+    }
+    
+}
+.open{
+    animation-duration: 300ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-name: slideclose;
+}
+@keyframes slideclose {
+    from{
+        max-height: 200px;
+    }
+    to{
+        max-height: 0px;
+    }
+    
+}

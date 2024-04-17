@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Pic1st from "../assets/1stpic.jpg";
 import Pic2nd from "../assets/2ndpic.jpg";
 import Pic3rd from "../assets/3rdpic.jpg";
@@ -144,6 +144,7 @@ import {
   FooterSectionStayusInnerDiv,
   FooterSectionStayusSearch,
   FooterSectionStayusButton,
+  FAQSlider,
 } from "./LandingPagestyle";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -151,11 +152,17 @@ import "slick-carousel/slick/slick-theme.css";
 export default function LandingPage() {
   var settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+  const [one, setOne] = useState(true);
+  const [two, setTwo] = useState(true)
+  const [three, setThree] = useState(true)
+  const [four, setFour] = useState(true)
+  const [five, setFive] = useState(true)
+  const [six, setSix] = useState(true)
   return (
     <>
       <NavDiv>
@@ -362,46 +369,122 @@ export default function LandingPage() {
           </TestimonialCardInnerDiv>
         </TestimonialCardDiv>
       </TestimonialSectionMainDiv>
-      <FAQSection>
-        <Slider {...settings}>
-        <FAQInnerDiv>
-          <FAQButtonDiv>
-            <FAQButton>Testimonials</FAQButton>
-            <br />
-          </FAQButtonDiv>
-          <FAQH1Div>
-            <FAQH1>
-              Craft AI has saved us thousands of hours of work. We are able to
-              spin up projects and features faster.
-            </FAQH1>
-          </FAQH1Div>
-          <FAQDetailDiv>
-            <FAQInnerDiv1>
-              <FAQAvatar src={Avatar} />
-            </FAQInnerDiv1>
-            <FAQInnerDiv2>
-              <FAQName>
-                <FAQH3>MOllie Hall</FAQH3>
-              </FAQName>
-              <FAQName style={{ gap: "5px" }}>
-                <FAQStar src={Star} />
-                <FAQStar src={Star} />
-                <FAQStar src={Star} />
-                <FAQStar src={Star} />
-                <FAQStar src={Star} />
-              </FAQName>
-              <FAQName style={{ marginTop: "2px" }}>
-                <FAQp>
-                  {" "}
-                  Hear from some of our amazing customers who are automating
-                  their finances.
-                </FAQp>
-              </FAQName>
-            </FAQInnerDiv2>
-          </FAQDetailDiv>
-        </FAQInnerDiv>
+      {/* <FAQSection> */}
+      <div className="FAQMainDiv">
+        {/* <Slider {...settings }  > */}
+        <Slider className="slider234" {...settings}>
+          <FAQInnerDiv>
+            <FAQButtonDiv>
+              <FAQButton>Testimonials</FAQButton>
+              <br />
+            </FAQButtonDiv>
+            <FAQH1Div>
+              <FAQH1>
+                Craft AI has saved us thousands of hours of work. We are able to
+                spin up projects and features faster.
+              </FAQH1>
+            </FAQH1Div>
+            <FAQDetailDiv>
+              <FAQInnerDiv1>
+                <FAQAvatar src={Avatar} />
+              </FAQInnerDiv1>
+              <FAQInnerDiv2>
+                <FAQName>
+                  <FAQH3>MOllie Hall</FAQH3>
+                </FAQName>
+                <FAQName style={{ gap: "5px" }}>
+                  <FAQStar src={Star} />
+                  <FAQStar src={Star} />
+                  <FAQStar src={Star} />
+                  <FAQStar src={Star} />
+                  <FAQStar src={Star} />
+                </FAQName>
+                <FAQName style={{ marginTop: "2px" }}>
+                  <FAQp>
+                    {" "}
+                    Hear from some of our amazing customers who are automating
+                    their finances.
+                  </FAQp>
+                </FAQName>
+              </FAQInnerDiv2>
+            </FAQDetailDiv>
+          </FAQInnerDiv>
+          <FAQInnerDiv>
+            <FAQButtonDiv>
+              <FAQButton>Testimonials</FAQButton>
+              <br />
+            </FAQButtonDiv>
+            <FAQH1Div>
+              <FAQH1>
+                Craft AI has saved us thousands of hours of work. We are able to
+                spin up projects and features faster.
+              </FAQH1>
+            </FAQH1Div>
+            <FAQDetailDiv>
+              <FAQInnerDiv1>
+                <FAQAvatar src={Avatar} />
+              </FAQInnerDiv1>
+              <FAQInnerDiv2>
+                <FAQName>
+                  <FAQH3>MOllie Hall</FAQH3>
+                </FAQName>
+                <FAQName style={{ gap: "5px" }}>
+                  <FAQStar src={Star} />
+                  <FAQStar src={Star} />
+                  <FAQStar src={Star} />
+                  <FAQStar src={Star} />
+                  <FAQStar src={Star} />
+                </FAQName>
+                <FAQName style={{ marginTop: "2px" }}>
+                  <FAQp>
+                    {" "}
+                    Hear from some of our amazing customers who are automating
+                    their finances.
+                  </FAQp>
+                </FAQName>
+              </FAQInnerDiv2>
+            </FAQDetailDiv>
+          </FAQInnerDiv>
+          <FAQInnerDiv>
+            <FAQButtonDiv>
+              <FAQButton>Testimonials</FAQButton>
+              <br />
+            </FAQButtonDiv>
+            <FAQH1Div>
+              <FAQH1>
+                Craft AI has saved us thousands of hours of work. We are able to
+                spin up projects and features faster.
+              </FAQH1>
+            </FAQH1Div>
+            <FAQDetailDiv>
+              <FAQInnerDiv1>
+                <FAQAvatar src={Avatar} />
+              </FAQInnerDiv1>
+              <FAQInnerDiv2>
+                <FAQName>
+                  <FAQH3>MOllie Hall</FAQH3>
+                </FAQName>
+                <FAQName style={{ gap: "5px" }}>
+                  <FAQStar src={Star} />
+                  <FAQStar src={Star} />
+                  <FAQStar src={Star} />
+                  <FAQStar src={Star} />
+                  <FAQStar src={Star} />
+                </FAQName>
+                <FAQName style={{ marginTop: "2px" }}>
+                  <FAQp>
+                    {" "}
+                    Hear from some of our amazing customers who are automating
+                    their finances.
+                  </FAQp>
+                </FAQName>
+              </FAQInnerDiv2>
+            </FAQDetailDiv>
+          </FAQInnerDiv>
         </Slider>
-      </FAQSection>
+        {/* </Slider> */}
+      </div>
+      {/* </FAQSection> */}
       <LastSection>
         <LastSectionHeadDiv>
           <LastSectionButtonDiv>
@@ -418,59 +501,116 @@ export default function LandingPage() {
           </LastSectionInnerHeadDiv>
         </LastSectionHeadDiv>
         <LastSectionQASection>
-          <LastSectionQA1>
+          <LastSectionQA>
             <LastSectionQA1Inner>
-              <PlusMinus src={Minus} />
+              <PlusMinus
+                src={one ? Plus : Minus}
+                onClick={() => {
+                    setOne(!one)
+                    // setTwo(false)
+                }}
+              />
               <LastSectionQuestion>
                 How do I create an account on your platform?
               </LastSectionQuestion>
-              <LastSectionAnswer style={{ marginLeft: "30px" }}>
+
+              <LastSectionAnswer className={one ? "open" : "close"} style={{ marginLeft: "30px" }}>
                 To create an account on our platform, simply click on the "Sign
                 Up" button on the homepage. Fill in the required information,
                 verify your email, and you're all set to explore and use our
                 services.
               </LastSectionAnswer>
             </LastSectionQA1Inner>
-          </LastSectionQA1>
+          </LastSectionQA>
           <LastSectionQA>
             <LastSectionQADiv>
-              <PlusMinus src={Plus} />
+              <PlusMinus src={two ? Plus : Minus}
+                onClick={() => {
+                    setTwo(!two)
+                    // setOne(false)
+                }}/>
               <LastSectionQuestion>
                 What file formats are available for logo downloads?
               </LastSectionQuestion>
+              <LastSectionAnswer className={two ? "open" : "close"} style={{ marginLeft: "30px" }}>
+                To create an account on our platform, simply click on the "Sign
+                Up" button on the homepage. Fill in the required information,
+                verify your email, and you're all set to explore and use our
+                services.
+              </LastSectionAnswer>
             </LastSectionQADiv>
           </LastSectionQA>
           <LastSectionQA>
             <LastSectionQADiv>
-              <PlusMinus src={Plus} />
+              <PlusMinus src={three ? Plus : Minus}
+                onClick={() => {
+                    setThree(!three)
+                    // setOne(false)
+                }} />
               <LastSectionQuestion>
                 Can I customize a pre-designed logo template?
               </LastSectionQuestion>
+              <LastSectionAnswer className={three ? "open" : "close"} style={{ marginLeft: "30px" }}>
+                To create an account on our platform, simply click on the "Sign
+                Up" button on the homepage. Fill in the required information,
+                verify your email, and you're all set to explore and use our
+                services.
+              </LastSectionAnswer>
             </LastSectionQADiv>
           </LastSectionQA>
           <LastSectionQA>
             <LastSectionQADiv>
-              <PlusMinus src={Plus} />
+              <PlusMinus src={four ? Plus : Minus}
+                onClick={() => {
+                    setFour(!four)
+                    // setOne(false)
+                }}  />
               <LastSectionQuestion>
                 Is there a refund policy for logo purchases?
               </LastSectionQuestion>
+              <LastSectionAnswer className={four ? "open" : "close"} style={{ marginLeft: "30px" }}>
+                To create an account on our platform, simply click on the "Sign
+                Up" button on the homepage. Fill in the required information,
+                verify your email, and you're all set to explore and use our
+                services.
+              </LastSectionAnswer>
             </LastSectionQADiv>
           </LastSectionQA>
           <LastSectionQA>
             <LastSectionQADiv>
-              <PlusMinus src={Plus} />
+              <PlusMinus src={five ? Plus : Minus}
+                onClick={() => {
+                    setFive(!five)
+                    // setOne(false)
+                }}  />
               <LastSectionQuestion>
                 How do I contact customer support for assistance?
               </LastSectionQuestion>
+              <LastSectionAnswer className={five ? "open" : "close"} style={{ marginLeft: "30px" }}>
+                To create an account on our platform, simply click on the "Sign
+                Up" button on the homepage. Fill in the required information,
+                verify your email, and you're all set to explore and use our
+                services.
+              </LastSectionAnswer>
             </LastSectionQADiv>
           </LastSectionQA>
           <LastSectionQA>
             <LastSectionQADiv>
-              <PlusMinus src={Plus} />
+              <PlusMinus src={six ? Plus : Minus}
+                onClick={() => {
+                    setSix(!six)
+                    // setOne(false)
+                }}  />
               <LastSectionQuestion>
                 Are there any subscription plans available for extended
                 features?
               </LastSectionQuestion>
+              <LastSectionAnswer className={six ? "open" : "close"} style={{ marginLeft: "30px" }}>
+                To create an account on our platform, simply click on the "Sign
+                Up" button on the homepage. Fill in the required information,
+                verify your email, and you're all set to explore and use our
+                services.
+              </LastSectionAnswer>
             </LastSectionQADiv>
           </LastSectionQA>
         </LastSectionQASection>
