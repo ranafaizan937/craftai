@@ -1,217 +1,22 @@
-import React, { useState } from "react";
-import Pic1st from "../assets/1stpic.jpg";
-import Pic2nd from "../assets/2ndpic.jpg";
-import Pic3rd from "../assets/3rdpic.jpg";
-import Card1Pic1 from "../assets/Card1pic.jpg";
-import Pic1 from "../assets/Dummy Logo.jpg";
-import Card1Pic2 from "../assets/Card1pic2.jpg";
-import Card2Pic1 from "../assets/Card2pic1.jpg";
-import Card2pic2 from "../assets/Card2pic2.jpg";
-import TestimonialCard1Logo from "../assets/Featured icon.jpg";
-import TestimonialCard2Logo from "../assets/Card2Icon.jpg";
-import TestimonialCard3Logo from "../assets/Card3Icon.jpg";
-import TestimonialCard4Logo from "../assets/Card4Icon.jpg";
-import Avatar from "../assets/Avatar.png";
-import Star from "../assets/Frame.png";
-import Plus from "../assets/plus.png";
-import Minus from "../assets/minus.png";
-import Slider from "react-slick";
-import {
-  Card1,
-  Card1First,
-  Card1FirstDes,
-  Card1FirstDesDiv,
-  Card1FirstPic,
-  Card1FirstPicDiv,
-  Card1FirstButton,
-  Card1Second,
-  Card1h3,
-  Card1p,
-  Card2,
-  CardDiv,
-  DeatilH4,
-  DetailBody,
-  DetailBody2,
-  DetailButton,
-  DetailDescription,
-  DetailHead,
-  DetailInnerSection,
-  DetailSection,
-  FeatureDiv,
-  FeatureInnerSection,
-  FeatureList,
-  FeatureListItem,
-  FeatureMainSection,
-  FirstDiv,
-  FirstDivData,
-  FirstPic,
-  GetStartedDiv,
-  GetStartedNavBtn,
-  HeroHeadSection,
-  LogiDiv,
-  Logo,
-  NavDiv,
-  NavInnerDiv,
-  Pic1Section,
-  Pic2Section,
-  PicInnerSection,
-  PicSection,
-  SecondDiv,
-  SecondDivData,
-  SecondPic,
-  ThirdDiv,
-  ThirdDivList,
-  ThirdDivListItem,
-  ThirdPic,
-  Card1SecondPicDiv,
-  Card1SecondPic,
-  Card1SecondDesDiv,
-  Card1SecondDes,
-  Card1Secondh3,
-  Card1Secondp,
-  Card1SecondButton,
-  Card2First,
-  Card2Second,
-  Card2FirstPicDiv,
-  Card2FirstPic,
-  Card2FirstDesDiv,
-  Card2FirstDes,
-  Card2h3,
-  Card2p,
-  Card2FirstButton,
-  Card2SecondPicDiv,
-  Card2SecondPic,
-  Card2SecondDesDiv,
-  Card2SecondDes,
-  Card2Secondh3,
-  Card2Secondp,
-  Card2SecondButton,
-  TestimonialSectionMainDiv,
-  TestimonialHeadDiv,
-  TestimonialButton,
-  TestimonialButtonDiv,
-  TestimonialH1,
-  TestimonialP,
-  TestimonialCardDiv,
-  TestimonialCardInnerDiv,
-  TestimonialCard1,
-  TestimonialCard2,
-  TestimonialCard3,
-  TestimonialCard4,
-  TestimonialCard1Pic,
-  TestimonialCard1InnerDiv,
-  TestimonialCard1InnerH3,
-  TestimonialCard1InnerP,
-  FAQSection,
-  FAQInnerDiv,
-  FAQButtonDiv,
-  FAQButton,
-  FAQH1,
-  FAQH1Div,
-  FAQDetailDiv,
-  FAQInnerDiv1,
-  FAQInnerDiv2,
-  FAQAvatar,
-  FAQName,
-  FAQH3,
-  FAQStar,
-  FAQp,
-  LastSection,
-  LastSectionHeadDiv,
-  LastSectionButtonDiv,
-  LastSectionButton,
-  LastSectionInnerHeadDiv,
-  LastSectionHeadH1,
-  LastSectionHeadDes,
-  LastSectionQASection,
-  LastSectionQA1,
-  LastSectionQA,
-  LastSectionQA1Inner,
-  PlusMinus,
-  LastSectionQuestion,
-  LastSectionAnswer,
-  LastSectionQADiv,
-  FooterSection,
-  FooterSectionDiv,
-  FooterSectionInnerDiv,
-  FooterSectionLogo,
-  FooterSectionP,
-  FooterSectionListDiv,
-  FooterSectionSpan,
-  FooterSectionList2Div,
-  FooterSectionStayusDiv,
-  FooterSectionStayusP,
-  FooterSectionStayusInnerDiv,
-  FooterSectionStayusSearch,
-  FooterSectionStayusButton,
-  FAQSlider,
-} from "./LandingPagestyle";
-import "slick-carousel/slick/slick.css";
+import React from "react";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import FAQSection from "./FAQSection";
+import FeatureSection from "./FeatureSection";
+import Footer from "./Footer";
+import HeroSection from "./HeroSection";
+import LastSectionComponent from "./LastSectionComponent";
+import NavBar from "./NavBar";
+import TestomonialSection from "./TestomonialSection";
 
 export default function LandingPage() {
-  var settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-  const [one, setOne] = useState(true);
-  const [two, setTwo] = useState(true)
-  const [three, setThree] = useState(true)
-  const [four, setFour] = useState(true)
-  const [five, setFive] = useState(true)
-  const [six, setSix] = useState(true)
+
+
   return (
     <>
-      <NavDiv>
-        <NavInnerDiv>
-          <LogiDiv>
-            <Logo src={Pic1} />
-          </LogiDiv>
-          <FeatureDiv>
-            <FeatureList>
-              <FeatureListItem>Use Cases</FeatureListItem>
-              <FeatureListItem>Features</FeatureListItem>
-              <FeatureListItem>Resourcing</FeatureListItem>
-              <FeatureListItem>Pricing</FeatureListItem>
-            </FeatureList>
-          </FeatureDiv>
-          <GetStartedDiv>
-            <GetStartedNavBtn type="primary">Get Started</GetStartedNavBtn>
-          </GetStartedDiv>
-        </NavInnerDiv>
-      </NavDiv>
-      <HeroHeadSection>
-        <DetailSection>
-          <DetailInnerSection>
-            <DetailHead>
-              <DeatilH4>CRAFT, CUSTOMIZE, CAPTIVE!</DeatilH4>
-            </DetailHead>
-            {/* <h1>Elevate Your Creativity With</h1> */}
-            <DetailBody>Elevate Your Creativity With</DetailBody>
-            <DetailBody2>AI-Powered Tools</DetailBody2>
-            <DetailDescription>
-              Explore our AI-Powered tool for logo design, video creationn and
-              stunning mockups
-            </DetailDescription>
-            <DetailButton type="primary">Get Started Now</DetailButton>
-          </DetailInnerSection>
-        </DetailSection>
-        <PicSection>
-          <PicInnerSection>
-            <Pic1Section>
-              <FirstPic src={Pic1st} />
-            </Pic1Section>
-            <Pic2Section>
-              <SecondPic src={Pic2nd} />
-              <ThirdPic src={Pic3rd} />
-            </Pic2Section>
-          </PicInnerSection>
-        </PicSection>
-      </HeroHeadSection>
-      <FeatureMainSection>
+      <NavBar></NavBar>
+      <HeroSection></HeroSection>
+      {/* <FeatureMainSection>
         <FeatureInnerSection>
           <FirstDiv>
             <FirstDivData>
@@ -301,8 +106,9 @@ export default function LandingPage() {
             </Card2>
           </CardDiv>
         </FeatureInnerSection>
-      </FeatureMainSection>
-      <TestimonialSectionMainDiv>
+      </FeatureMainSection> */}
+      <FeatureSection></FeatureSection>
+      {/* <TestimonialSectionMainDiv>
         <TestimonialHeadDiv>
           <TestimonialButtonDiv>
             <TestimonialButton>Features</TestimonialButton>
@@ -368,10 +174,10 @@ export default function LandingPage() {
             </TestimonialCard4>
           </TestimonialCardInnerDiv>
         </TestimonialCardDiv>
-      </TestimonialSectionMainDiv>
+      </TestimonialSectionMainDiv> */}
+      <TestomonialSection></TestomonialSection>
       {/* <FAQSection> */}
-      <div className="FAQMainDiv">
-        {/* <Slider {...settings }  > */}
+      {/* <div className="FAQMainDiv">
         <Slider className="slider234" {...settings}>
           <FAQInnerDiv>
             <FAQButtonDiv>
@@ -482,10 +288,9 @@ export default function LandingPage() {
             </FAQDetailDiv>
           </FAQInnerDiv>
         </Slider>
-        {/* </Slider> */}
-      </div>
-      {/* </FAQSection> */}
-      <LastSection>
+      </div> */}
+      <FAQSection></FAQSection>
+      {/* <LastSection>
         <LastSectionHeadDiv>
           <LastSectionButtonDiv>
             <LastSectionButton>FAQs</LastSectionButton>
@@ -614,53 +419,10 @@ export default function LandingPage() {
             </LastSectionQADiv>
           </LastSectionQA>
         </LastSectionQASection>
-      </LastSection>
-      <FooterSection>
-        <FooterSectionDiv>
-          <FooterSectionInnerDiv>
-            <FooterSectionLogo src={Pic1} />
-            <FooterSectionP>
-              Design amazing digital experiences that create more happy in the
-              world.
-            </FooterSectionP>
-          </FooterSectionInnerDiv>
-          <FooterSectionInnerDiv>
-            <FooterSectionListDiv>
-              <FooterSectionSpan style={{ color: "black", marginTop: "0" }}>
-                Product
-              </FooterSectionSpan>
-              <FooterSectionSpan>Overview</FooterSectionSpan>
-              <FooterSectionSpan>Feature</FooterSectionSpan>
-              <FooterSectionSpan>Solutions</FooterSectionSpan>
-              <FooterSectionSpan>Tutorial</FooterSectionSpan>
-              <FooterSectionSpan>Pricing</FooterSectionSpan>
-            </FooterSectionListDiv>
-          </FooterSectionInnerDiv>
-          <FooterSectionInnerDiv>
-            <FooterSectionList2Div>
-              <FooterSectionSpan
-                style={{ color: "black", marginTop: "0", alignItems: "center" }}
-              >
-                Product
-              </FooterSectionSpan>
-              <FooterSectionSpan>Overview</FooterSectionSpan>
-              <FooterSectionSpan>Feature</FooterSectionSpan>
-              <FooterSectionSpan>Solutions</FooterSectionSpan>
-              <FooterSectionSpan>Tutorial</FooterSectionSpan>
-              <FooterSectionSpan>Pricing</FooterSectionSpan>
-            </FooterSectionList2Div>
-          </FooterSectionInnerDiv>
-          <FooterSectionInnerDiv>
-            <FooterSectionStayusDiv>
-              <FooterSectionStayusP>Stay up to date</FooterSectionStayusP>
-              <FooterSectionStayusInnerDiv>
-                <FooterSectionStayusSearch placeholder="Email"></FooterSectionStayusSearch>
-                <FooterSectionStayusButton>Subscribe</FooterSectionStayusButton>
-              </FooterSectionStayusInnerDiv>
-            </FooterSectionStayusDiv>
-          </FooterSectionInnerDiv>
-        </FooterSectionDiv>
-      </FooterSection>
+      </LastSection> */}
+      <LastSectionComponent></LastSectionComponent>
+      
+      <Footer></Footer>
     </>
   );
 }
