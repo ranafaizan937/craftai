@@ -2,7 +2,9 @@ import React from 'react'
 
 const Testing = () => {
   return (
-    <div>Testing page addedd</div>
+    <div>Testing page addedd
+      i have added a one new thing
+    </div>
   )
 }
 
