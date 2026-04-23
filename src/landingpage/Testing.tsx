@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testing = () => {
   return (
-    <div>that was shit
+    <div>dont care about anything
     </div>
   )
 }
