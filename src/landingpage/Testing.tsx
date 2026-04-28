@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testing = () => {
   return (
-    <div>avi avi ho geya
+    <div>pta ni kyha talkeef he is sajan ko
     </div>
   )
 }
