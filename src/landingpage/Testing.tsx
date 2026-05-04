@@ -6,7 +6,6 @@ const Testing = () => {
       <div>
         new div add krdi he
         <p>This is a paragraph inside the new div</p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae eius sit ex ipsam, consectetur ut?
       </div>
     </div>
   )
