@@ -12,10 +12,7 @@ const farig = () => {
         consequuntur eum. Quam excepturi accusamus ducimus! Ipsam dolore a
         praesentium culpa quas!
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem
-        optio porro ea, nesciunt veritatis facere deserunt quod quam dolore.
-      </p>
+   
     </div>
   );
 };
